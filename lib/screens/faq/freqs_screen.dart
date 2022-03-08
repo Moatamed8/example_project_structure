@@ -107,6 +107,10 @@ class _FrqsScreenState extends State<FrqsScreen> {
                                             )
                                           : SizedBox(),
                                       AuthProvider.of(context)
+                                          .faqs[index]
+                                          .isSelect
+                                          ?Divider():SizedBox(),
+                                      AuthProvider.of(context)
                                               .faqs[index]
                                               .isSelect
                                           ? Wrap(

@@ -49,6 +49,7 @@ class _HomeBottomNavegationBarState extends State<HomeBottomNavegationBar> {
         textDirection: TextDirection.rtl,
         child: Scaffold(
           appBar: AppBar(
+            elevation: 0,
             backgroundColor: ColorsUtils.tamyez,
             actions: [
               Icon(Icons.search),
