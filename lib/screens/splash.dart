@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 5), () {
-      if (TokenUtil.getTokenFromMemory().isNotEmpty) {
+      if (TokenUtil.getTokenFromMemory().isEmpty) {
         CustomFunctions.pushScreen(widget: LoginScreen(), context: context);
       } else {
         CustomFunctions.pushScreen(
